@@ -25,6 +25,16 @@
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
       </div>
     </div>
+
+    <div id="imageModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-content">
+        <button id="closeModal" class="close-modal" aria-label="Close details window">&times;</button>
+        <img id="modalImage" src="" alt="" class="modal-image" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate" class="modal-date"></p>
+        <p id="modalExplanation"></p>
+      </div>
+    </div>
   </div>
 
   <script src="js/dateRange.js"></script>
