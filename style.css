@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f1f1f1;
   padding: 20px;
+  letter-spacing: 1px;
 }
 
 /* Centered container */
@@ -29,22 +30,22 @@ body {
 }
 
 h1 {
-  font-family: Verdana, sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: bold;
-  color: #212121;
+  color: black;
 }
 
 /* Logo */
 .logo {
-  width: 140px;
-  margin-right: 15px;
+  width: 150px;
+  margin-right: 20px;
 }
 
 /* Date‐picker & button row */
 .filters {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   margin-bottom: 20px;
   padding: 0 20px;
@@ -56,12 +57,13 @@ button {
   font-family: Arial, sans-serif;
   font-weight: normal;
   color: #666;
-  padding: 10px 15px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
   width: 100%;
+  padding: 5px;
+  letter-spacing: 1px;
 }
 
 /* Button specific */
@@ -102,9 +104,9 @@ button:hover {
   min-width: 280px;
   max-width: 500px;
   background: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -113,8 +115,8 @@ button:hover {
 }
 
 .gallery-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 14px rgba(0,0,0,0.16);
+  transform: translateY(5px);
+  box-shadow: 0 15px 15px rgba(0,0,0,0.10);
 }
 
 /* Three columns on wider screens */
@@ -128,13 +130,15 @@ button:hover {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .gallery-item p {
   margin-top: 10px;
   padding: 5px;
   font-size: 14px;
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
 }
 
 /* Placeholder content */
@@ -142,11 +146,11 @@ button:hover {
   flex: 1 1 100%;
   text-align: center;
   padding: 40px;
-  color: #666;
+  color: black;
 }
 
 .placeholder-icon {
-  font-size: 48px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -175,20 +179,20 @@ button:hover {
   max-height: 92vh;
   overflow-y: auto;
   background: #fff;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 5px;
+  padding: 30px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
 .close-modal {
   position: absolute;
-  top: 10px;
-  right: 12px;
+  top: -5px;
+  left: 2.5px;
   border: none;
   background: transparent;
-  font-size: 32px;
+  font-size: 50px;
   line-height: 1;
-  color: #555;
+  color: black;
   cursor: pointer;
 }
 
@@ -196,23 +200,27 @@ button:hover {
   width: 100%;
   max-height: 65vh;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 5px;
   background: #111;
+  margin-top: 15px;
 }
 
 #modalTitle {
-  margin-top: 16px;
-  color: #222;
+  margin-top: 15px;
+  color: black;
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
 }
 
 .modal-date {
-  margin-top: 8px;
+  margin-top: 10px;
   font-weight: bold;
-  color: #444;
+  color: black;
+  font-family: "DM Mono", monospace;
 }
 
 #modalExplanation {
-  margin-top: 12px;
-  line-height: 1.6;
-  color: #333;
+  margin-top: 25px;
+  line-height: 1.5;
+  color: black;
 }
